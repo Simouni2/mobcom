@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register & Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="firebaseauth.js"></script>
+</head>
+<body>
+    <!-- Register Form -->
+    <div class="app-container" id="signup" style="display:none;">
+        <img src="assets/brainZap_logo.png" alt="BrainZap Logo" class="app-logo">
+        <h1 class="form-title">Register</h1>
+        <form method="post" action="">
+            <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
+            
+            <div class="input-group">
+                <label for="fName">First Name</label>
+                <input type="text" id="fName" placeholder="First Name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="lName">Last Name</label>
+                <input type="text" id="lName" placeholder="Last Name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="rEmail">Email</label>
+                <input type="email" id="rEmail" placeholder="Email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="rPassword">Password</label>
+                <input type="password" id="rPassword" placeholder="Password" required>
+            </div>
+
+            <button class="btn" id="submitSignUp">Sign Up</button>
+        </form>
+
+        <p class="or">--------------------------------or---------------------------------</p>
+        <div class="icons">
+            <i class="fab fa-google"></i>
+            <i class="fab fa-facebook"></i>
+        </div>
+
+        <div class="links">
+            <p>Already Have an Account?</p>
+            <button id="signInButton">Log In</button>
+        </div>
+    </div>
+
+    <!-- Sign-In Form -->
+    <div class="app-container" id="signIn">
+        <img src="assets/brainZap_logo.png" alt="BrainZap Logo" class="app-logo">
+        <h1 class="form-title">Log In</h1>
+        <form method="post" action="">
+            <div id="signInMessage" class="messageDiv" style="display:none;"></div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+
+            <p class="recover"><a href="#">Recover Password</a></p>
+            <button class="btn" id="submitSignIn">Log In</button>
+        </form>
+
+        <p class="or">--------------------------------or---------------------------------</p>
+        <div class="icons">
+            <i class="fab fa-google"></i>
+            <i class="fab fa-facebook"></i>
+        </div>
+
+        <div class="links">
+            <p>Don't have an account yet?</p>
+            <button id="signUpButton">Register</button>
+        </div>
+    </div>
+    <img src="assets/login.png" class="wave-footer" alt="Footer">
+
+    <script src="script.js"></script>
+</body>
+</html>

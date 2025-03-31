@@ -1,0 +1,168 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(170deg, #003F66, #002033);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white; /* Set the default text color to white */
+}
+
+/* Logo Styling */
+.app-logo {
+    display: block;
+    width: 100px; /* Adjust size as needed */
+    margin: 0 auto 20px; /* Centers the logo with spacing */
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.form-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: white; /* Ensure form title is white */
+    text-align: center; /* Center the form title */
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 1rem; /* Reduce the space between input groups */
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+    align-items: flex-start; /* Align input and label to the left */
+}
+
+.input-group label {
+    font-size: 1rem;
+    color: white; /* Set the label text color to white */
+    margin-bottom: 3px; /* Reduced space between label and input */
+}
+
+.input-group i {
+    position: absolute;
+    left: 12px; /* Position icon at the left side */
+    top: 50%; /* Center icon vertically */
+    transform: translateY(-50%); /* Adjust to vertically center */
+    /* color: #757575; */
+    font-size: 18px; /* Adjust icon size if needed */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 12px 10px 40px; /* Reduce padding on the top and bottom */
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: 0.3s;
+    color: white; /* Set input text color to white */
+    background: #003F66;
+    color: #ffffff;
+}
+
+.input-group input:focus {
+    border-color: #5c67f2;
+    outline: none;
+    /* box-shadow: 0 0 8px rgba(92, 103, 242, 0.5); */
+}
+
+button {
+    background: #5c67f2;
+    color: white; /* Ensure button text is white */
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px; /* Add spacing above the button */
+}
+
+button:hover {
+    background: #464fc2;
+}
+
+.or {
+    margin: 1rem 0;
+    font-size: 1rem;
+    color: white; /* Set the "or" text color to white */
+    text-align: center; /* Center the "or" text */
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 2rem;
+}
+
+.icons i {
+    font-size: w.5rem;
+    color: white; /* Change icon color to white */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icons i:hover {
+    color: #464fc2;
+}
+
+.links {
+    display: flex;
+    flex-direction: column; /* Stack text and buttons vertically */
+    align-items: center; /* Center links */
+}
+
+.links p {
+    font-size: 1rem;
+    color: rgb(248, 248, 251); /* Set links text color to white */
+    margin-bottom: -20px; /* Add space below the text */
+    margin-top: -20px; /* Add space below the text */
+}
+
+.links button {
+    background: none;
+    border: none;
+    color: rgb(56, 19, 246); /* Set button text color to white */
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.links button:hover {
+    text-decoration: underline;
+    color: #464fc2;
+}
+
+.recover a {
+    color: white; /* Set recovery link color to white */
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.recover a:hover {
+    text-decoration: underline;
+}
+.wave-footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
